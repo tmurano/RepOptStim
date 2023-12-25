@@ -19,7 +19,7 @@ library(rstatix)
  
 ###################### Set Working Directory 
 
-setwd("~/Desktop/Processed Data_position_Ca transient/Figures_OF")
+setwd("~/Desktop/")
 
 
 
