@@ -37,7 +37,7 @@ colnames(info) <- c("MouseName", "StimType", "OF.15min", "Opt.Stim")
 
 count <- read.delim("FPKM_count.txt", header = T, stringsAsFactors = F)
 gene <- count[,1] 
-count <- count[,-1] #Mar-1などの重複に注意
+count <- count[,-1]
 colnames(count) <- info$MouseName
 row.names(count) <- gene  
 
@@ -48,14 +48,14 @@ row.names(count) <- gene
 typ <- "Stimx3.2wks"
 typ1 <- info[7:12,]
 
-typ <- "Stimx10.2wks"
-typ1 <- info[13:18,]
+#typ <- "Stimx10.2wks"
+#typ1 <- info[13:18,]
 
-typ <- "Stimx3.24hrs"
-typ1 <- info[19:24,]
+#typ <- "Stimx3.24hrs"
+#typ1 <- info[19:24,]
 
-typ <- "Stimx10.24hrs"
-typ1 <- info[25:30,]
+#typ <- "Stimx10.24hrs"
+#typ1 <- info[25:30,]
 
 
 data <-  rbind(info[1:6,], typ1)
