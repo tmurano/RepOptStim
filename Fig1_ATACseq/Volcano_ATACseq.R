@@ -26,7 +26,7 @@ library(DESeq2)
 
 ###################### Set Working Directory 
 
-setwd("~/Desktop/Fig1_ATACseq")
+setwd("~/Desktop/")
 
 
 
